@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #1c3421;
+    color: white;
+    padding: 15px 20px;
+}
+.icon {
+    font-size: 70px; /* Icon ka size */
+    width: 50px; /* Width badhane ke liye */
+    height: 50px; /* Height badhane ke liye */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    height: 85vh;
+}
+
+.left-side-bar {
+    position: static;
+    width: 10%;
+    height: 67vh;
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*** ***************************************************************************************/
+
+.task-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 320px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* ✅ Click karne ke baad ye apply hoga */
+.task-card.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.task-card input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.task-card input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.task-card button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-card button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/******************************************************************************/
+
+.right-side-bar {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 10px);
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-btn {
+    width: 80px;
+    height: 40px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cards{
+    height: auto;
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    width: 13vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+}
+
+
+.card-h3{
+    /* border: 5px solid red; */
+    background-color: rgb(212, 244, 209);
+    margin: 5px 10px;
+    padding: 10px;
+    border-bottom: 2px solid;
+}
