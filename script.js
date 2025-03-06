@@ -147,7 +147,7 @@ document.querySelectorAll('.cards').forEach((board) => {
         event.preventDefault(); 
     });
 
-    board.addEventListener('drop', (event) => {
+    board.addEventListener('dragover', (event) => {
         event.preventDefault();
         const flyingElement = document.querySelector('.flying');
         if (flyingElement) {
