@@ -158,3 +158,109 @@ body {
     border-bottom: 2px solid;
     
 }
+/******************************************************************************************/
+
+.taskItem {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin-top: 10px;
+    border: 4px solid rgb(108, 238, 8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between circle and text */
+    padding: 5px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid rgb(68, 111, 2);
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column; /* Stack text and date */
+}
+
+.taskText {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.dateTime {
+    font-size: 0.8rem;
+    color: gray;
+}
+.add-TAsk {
+    background-color: #02cc2e;
+    color: white;
+    width: 120px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.add-TAsk:hover {
+    background-color: #037438;
+    transform: scale(1.1);
+}
+
+/**************************************************************************/
+.taskAdd {
+    width: 20%;
+    background: #f8f8f8;
+    height: 20vh;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto; /* Centers the div */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.taskAdd.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.taskAdd input {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.taskAdd input:focus {
+    border-color: #e1ff00;
+    box-shadow: 0 0 8px rgba(234, 255, 0, 0.3);
+}
+
+.taskAdd button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #dcdc0b;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.taskAdd button:hover {
+    background: #cce012;
+    transform: scale(1.05);
+}

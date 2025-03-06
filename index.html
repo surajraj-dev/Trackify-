@@ -21,25 +21,37 @@
         <div class="left-side-bar" id="sidebar-dashboard">
             <h2>dashboard</h2>
             <button class="add-btn" id="add-task-btn">Add</button>
-            <div class="task-card ">
+            <div class="task-card">
                 <input type="text" name="" id="textId" value="" /><br>
                 <button id="add-container-btn">Add Container</button>
             </div>
         </div>
 
         <div class="right-side-bar" id="task-section">
-            <div class="cards" id="heading">
+            <div class="cards" id="cards">
                 <h3 class="card-h3" id="todo-title">To-Do Tasks </h3>
+                <div class="taskItem" draggable="true">
+                    <span class="circle"></span>
+                    <div class="textContainer">
+                        <p class="taskText">Task Description</p>
+                        <span class="dateTime">05 Mar 2025, 10:30 AM</span>
+                    </div>
+                </div>
             </div>
 
             <div class="cards" id="">
-                <h3 class="card-h3" id="">Progress</h3>
+                <h3 class="card-h3" id="progress ">Progress</h3>
             </div>
             <div class="cards" id="">
-                <h3 class="card-h3" id="completed-title">Completed</h3>
+                <h3 class="card-h3" id="completed">Completed</h3>
             </div>
-
+            
         </div>
+        <button class="add-TAsk">Task +</button>
+        <div class="taskAdd " id="taskAdd">
+                <input type="text" id="text2Id" placeholder="Enter task..." /><br>
+                <button id="btn" >Add Task</button>
+            </div>
     </div>
 
     <script src="script.js"></script>
